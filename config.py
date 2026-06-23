@@ -1,6 +1,6 @@
 # ─── Board Settings ───────────────────────────────────────────────
-ROWS = 6
-COLS = 7
+ROWS = 8
+COLS = 8
 CONNECT_N = 4  # How many in a row to win (4 for standard, can increase for larger boards)
 
 # ─── AI Settings ──────────────────────────────────────────────────
@@ -15,7 +15,7 @@ HUMAN_PIECE = 1
 AI_PIECE = 2
 
 # ─── UI Settings (used by ui.py) ──────────────────────────────────
-SQUARE_SIZE = 100
+SQUARE_SIZE = 80
 RADIUS = SQUARE_SIZE // 2 - 5
 
 WIDTH = COLS * SQUARE_SIZE
