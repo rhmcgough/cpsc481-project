@@ -1,10 +1,12 @@
+# Provisional
 # ─── Board Settings ───────────────────────────────────────────────
 ROWS = 8
 COLS = 8
 CONNECT_N = 4  # How many in a row to win (4 for standard, can increase for larger boards)
 
 # ─── AI Settings ──────────────────────────────────────────────────
-AI_DEPTH = 5  # Minimax search depth (increase for harder AI, decrease for speed)
+AI_DEPTH = 5 # Minimax search depth (increase for harder AI, decrease for speed)
+AI_DIFFICULTY = 2
 
 # ─── Players ──────────────────────────────────────────────────────
 HUMAN = 0
@@ -27,3 +29,11 @@ RED    = (220, 50,  50)
 YELLOW = (240, 200,  0)
 WHITE  = (255, 255, 255)
 GREY   = (40,  40,  40)
+
+# ─── Benchmark Config ──────────────────────────────────────────────
+# This only controls P2, P1 is controlled by standard parameters above
+
+BENCHMARK_P2_DEPTH = 5       # depth for the AI simulating the human
+BENCHMARK_P2_DIFFICULTY = 2  # difficulty for the AI simulating the human
+BENCHMARK_GAMES = 20
+BENCHMARK_WORKERS = 4
