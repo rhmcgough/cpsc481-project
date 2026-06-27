@@ -17,7 +17,7 @@ The AI opponent supports adjustable difficulty levels and scales to any board si
 - Configurable board size (default 8×8, supports any dimensions)
 - Configurable win condition
 - Minimax search with Alpha-Beta Pruning
-- Adjustable AI difficulty — controls search depth and blocking behavior
+- Adjustable AI difficulty: controls search depth and blocking behavior
 - Custom heuristic evaluation function (center control, threat detection, difficulty-scaled blocking)
 - pygame GUI with hover preview and end-game messages
 - Benchmark mode: pit two AI players against each other across any number of games
@@ -69,7 +69,7 @@ Player 1 uses `AI_DIFFICULTY` and `AI_DEPTH`. Player 2 uses `BENCHMARK_P2_DIFFIC
 |------|-------------|
 | `config.py` | All configurable constants (board, AI, benchmark, UI settings) |
 | `game.py` | Board logic, move validation, win detection (works for any board size/N) |
-| `ai.py` | Minimax + alpha-beta pruning + difficulty-scaled heuristic evaluation |
+| `ai.py` | Minimax + alpha-beta pruning + difficulty scaled heuristic evaluation |
 | `ui.py` | pygame interface — rendering, input handling |
 | `main.py` | Entry point |
 | `benchmark.py` | AI vs AI benchmark runner with multiprocessing |
